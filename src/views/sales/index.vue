@@ -14,13 +14,7 @@
           <SystemTest :parentHeight="parentHeight" />
         </el-tab-pane>
 
-        <el-tab-pane label="单测试用例输入" name="third">
-          <SingleCase />
-        </el-tab-pane>
-
-        <el-tab-pane label="测试用例文件输入" name="fourth">
-          <ExcelFile />
-        </el-tab-pane>
+       
 
       </el-tabs>
     </el-card>

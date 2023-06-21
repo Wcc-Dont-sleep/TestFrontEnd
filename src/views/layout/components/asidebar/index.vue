@@ -23,15 +23,9 @@
           <el-menu-item index="/cash">(程序题)第7题:电信收费问题</el-menu-item>
           <el-menu-item index="/atm">(程序题)第12、15题:ATM</el-menu-item>
            <el-menu-item index="/sale">(程序题)第17题:销售系统</el-menu-item>
-          <el-menu-item index="/three">第3题:销售管理系统</el-menu-item>
-          <el-menu-item index="/five">第5题:电商平台测试</el-menu-item>
-           <el-menu-item index="/six">第6题:项目测试用例</el-menu-item>
-          <el-menu-item index="/eight">第8题:实时系统</el-menu-item>
-          <el-menu-item index="/thirteen">第13题:ERP系统</el-menu-item>
-          <el-menu-item index="/fourteen">第14题:实时Web系统</el-menu-item>
-       
+          
           <!-- <el-menu-item index="/nine">第15题:ATM机</el-menu-item> -->
-          <el-menu-item index="/sixteen">第16题:构建程序图</el-menu-item>
+         
          
           
         </el-menu-item-group>
