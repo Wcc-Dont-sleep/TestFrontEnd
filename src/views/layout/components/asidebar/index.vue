@@ -3,8 +3,8 @@
       class="el-menu-vertical-demo"
       @open="handleOpen"
       @close="handleClose"
-      background-color="#f6f9ff"
-      text-color="#012970"
+      background-color="#e8e8f7"
+      
       active-text-color="#4154f1"
       :collapse="isCollapse"
       :default-openeds="openeds"
@@ -13,9 +13,10 @@
       <el-submenu index="1">
         <template slot="title">
           <i class="el-icon-location"></i>
-          <span>课程练习</span>
+          <span color="#012970">课程练习</span>
         </template>
-        <el-menu-item-group>
+        
+        <el-menu-item-group   class="menu-item-group"  >
           <el-menu-item index="/triangle">(程序题)第1、9题:判断三角形</el-menu-item>
           <el-menu-item index="/calendar">(程序题)第2、10、11题:万年历问题</el-menu-item>
           <el-menu-item index="/sales">(程序题)第4题:电脑销售系统</el-menu-item>
@@ -78,8 +79,20 @@ export default {
 
 <style scoped lang="less">
   .el-menu-vertical-demo:not(.el-menu--collapse) {
-    width: 300px;
+    width: 320px;
     min-height: 400px;
   }
+  .menu-item-group {
+    
+    background-color: #8183f7; /* 修改背景颜色 */
+    background-color: #ffffff
+  }
 
+  .menu-item-group .el-menu-item {
+    margin-bottom: 3px; /* 修改下方间距 */
+    background-color: #c1c1f7 !important;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+  }
 </style>

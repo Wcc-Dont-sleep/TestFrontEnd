@@ -1,6 +1,6 @@
 <template>
     <div class="main-container">
-       <img style="width:1500px" src="./pre.png"/>
+       <img style="width:1100px" src="./MainPic.png"/>
     </div>
 </template>
 

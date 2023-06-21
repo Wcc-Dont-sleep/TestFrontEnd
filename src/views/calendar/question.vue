@@ -2,6 +2,7 @@
   <div>
     <span style="font-size: 24px"><b>&nbsp;万年历问题</b></span>
     <div style="font-size: 17px">
+      <b><p>问题描述</p></b>
       <p>在本题中，我们需要根据输入的年月日三个正整数变量，
         若该日期是一个合法日期，则以"yyyy-mm-dd"的形式输出该日期的下一天，
         若该日期不是一个合法日期，则应输出-1。
@@ -27,17 +28,17 @@
       <p> D4 = 31 </p> 
       <p> D5 = 其他日 </p>  
       <b>&nbsp;1.条件桩</b>
-      <p> C1 年在{Y1 Y2 Y3}中 </p>
-      <p> C2 月在{M1M2 M3 M4}中 </p>
-      <p> C3 日在{D1 D2 D3 D4 D5}中 </p>
+      <p> C1(年)在{Y1 Y2 Y3}中 </p>
+      <p> C2(月)在{M1M2 M3 M4}中 </p>
+      <p> C3(日)在{D1 D2 D3 D4 D5}中 </p>
       <b>&nbsp;2.动作桩</b>
-      <p> D1 下一日期 </p>
+      <p> A1(下一日期) </p>
       <b>&nbsp;3.确定规则的个数</b>
       <p> 3*4*5=60 </p>
       <b>&nbsp;4.填入条件项和动作项，得到初始决策表</b>
     </div>
     <img src="./1.png" style="width:100%;height:100%;
-    object-fit: fill;object-fit: contain;object-fit: scale-down;" />
+    object-fit: fill;" />
 
     <div style="font-size: 16px">
       <p>
@@ -45,7 +46,7 @@
       </p>
     </div>
     <img src="./2.png" style="width:100%;height:100%;
-    object-fit: fill;object-fit: contain;object-fit: scale-down;" />
+    object-fit: fill;" />
   </div>
 </template>
 

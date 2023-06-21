@@ -2,7 +2,7 @@
   <el-header class="header">
     <div>
       <i class="el-icon-s-fold" @click="changeCollapse"></i>
-      <span>第39组课程练习平台</span>
+      <span>课程练习平台</span>
     </div>
 
     <el-dropdown>
