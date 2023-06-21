@@ -1,10 +1,8 @@
 <template>
-  <div>
-
+  <div style="overflow: auto;height: 500px;">
     <span style="font-size: 24px"><b>&nbsp;电信收费问题</b></span>
     <div style="font-size: 16px">
-
-      <p>研究一个与我们的生活息息相关的电信收费问题系统，需求描述如下：</p>
+      <p>研究与我们的生活息息相关的电信收费问题系统，需求描述如下：</p>
       <p>
         A.
         <b>每月的电话总费用=基本月租费+折扣后的实际的通话费</b
@@ -42,6 +40,35 @@
         >
         </el-table-column>
       </el-table>
+
+      <p>
+        在设计测试用例前，我们首先对问题进行分析，得到变量的边界值，易知：
+        0 &lt= T &lt= 44640    分钟
+        本年度未按时缴费次数范围为： 0 &lt= C  &lt= 11 次
+      </p>
+
+      <span style="font-size: 24px"><b>边界值法</b></span>
+
+      <p> 这里我们选用健壮性边界测试法：由T、C的取值范围，我们取T的平均值为： 22320分钟；C的平均值为：6次</p>
+      <img src="./边界值.png" style="width:100%;height:100%;object-fit: fill;" />
+
+      <span style="font-size: 24px"><b>等价类法</b></span>
+      <p> 对于变量T，我们可以根据定价规则划分出5个有效等价区间，以及两个无效等价区间，他们分别是：</p>
+      <p>0 &lt= T&lt= 60、60 &lt T &lt= 120、120 &lt T &lt= 180、180 &lt T &lt= 300、300 &lt T &lt= 44640</p>
+      <p>T &lt 0、T > 44640</p>
+      <p>对于变量C，我们也可以划分出5个有效等价区间，以及两个无效等价区间，他们分别是：</p>
+      <p>0 &lt= C &lt= 1、 1 &lt C &lt= 2、 2 &lt C &lt= 3、 3 &lt C &lt= 6、 6 &lt C &lt= 11</p>
+      <p>C &lt 0、C > 11</p>
+      <p>根据上述区间，我们使用强健壮类方法设计我们的测试用例，为：</p>
+      <img src="./健壮等价类1.png" style="width:100%;height:100%;object-fit: fill;" />
+      <img src="./健壮等价类2.png" style="width:100%;height:100%;object-fit: fill;" />
+      <img src="./健壮等价类3.png" style="width:100%;height:100%;object-fit: fill;" />
+
+      <span style="font-size: 24px"><b>决策表法</b></span>
+      <p>根据题意，我们绘制出的决策表为</p>
+      <img src="./决策表.png" style="width:100%;height:100%;object-fit: fill;" />
+      <p>对应的测试用例为</p>
+      <img src="./决策表测试用例.png" style="width:100%;height:100%;object-fit: fill;" />
     </div>
   </div>
 </template>

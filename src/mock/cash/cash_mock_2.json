@@ -60,7 +60,7 @@
     "id": "TS8",
     "year":"2022",
     "month":"5",
-    "X": 60,
+    "X": 10,
     "Y": -1,
     "expectation": -1
   },
@@ -68,47 +68,47 @@
     "id": "TS9",
     "year":"2022",
     "month":"5",
-    "X": 60,
+    "X": 10,
     "Y": 0,
-    "expectation": 33.91
+    "expectation": 26.485
   },
   {
     "id": "TS10",
     "year":"2022",
     "month":"5",
-    "X": 60,
+    "X": 10,
     "Y": 2,
-    "expectation": 34
+    "expectation": 26.5
   },
   {
     "id": "TS11",
     "year":"2022",
     "month":"5",
-    "X": 60,
+    "X": 10,
     "Y": 3,
-    "expectation": 34
+    "expectation": 26.5
   },
   {
     "id": "TS12",
     "year":"2022",
     "month":"5",
-    "X": 60,
+    "X": 10,
     "Y": 6,
-    "expectation": 34
+    "expectation": 26.5
   },
   {
     "id": "TS13",
     "year":"2022",
     "month":"5",
-    "X": 60,
+    "X": 10,
     "Y": 11,
-    "expectation": 34
+    "expectation": 26.5
   },
   {
     "id": "TS14",
     "year":"2022",
     "month":"5",
-    "X": 60,
+    "X": 10,
     "Y": 12,
     "expectation": -1
   },

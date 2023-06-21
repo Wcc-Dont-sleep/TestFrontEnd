@@ -25,12 +25,12 @@
 
     <el-divider content-position="left">测试用例</el-divider>
 
-    <div class="main-table">
-      <el-table
+    <div class="main-tablse" >
+      <el-table 
         :data="tableData"
         :height="tableHeight"
         border
-        style="width: 100%;"
+        style="width: 100%; height: 300px;"
         v-loading="loading"
         :row-class-name="tableRowClassName"
       >
@@ -228,4 +228,5 @@ export default {
   display: flex;
   align-items: center;
 }
+
 </style>

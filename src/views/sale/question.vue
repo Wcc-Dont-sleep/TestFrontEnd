@@ -9,201 +9,32 @@
   
  
 </div>
-<img src="./1.png"/>
+<img src="./流程图.png"/>
 <p style="margin-top:50px;">语句覆盖：</p>
-<p>无条件语句的序列作为一个节点，对所有节点进行覆盖</p>
-<p>TC1:  acdfjk</p>
-<p>销售额：300万；请假天数：7天；现金到账：60%；</p>
-<p>TC2:  acdgk</p>
-<p>销售额：300万；请假天数：7天；现金到账：50%；</p>
-<p>TC3:  aceijk</p>
-<p>销售额：100万；请假天数：7天；现金到账：95%；</p>
-<p>TC4:  acehjk</p>
-<p>销售额：100万；请假天数：7天；现金到账：75%；</p>
+<p>对所有节点进行覆盖</p>
+<img src="./语句覆盖.png"/>
+
 <p style="margin-top:50px;">判断覆盖：</p>
 <p>每个判断的真分支和假分支都至少经历一次</p>
-<p>TC1:  acdfjk</p>
-<p>销售额：300万；请假天数：7天；现金到账：60%；</p>
-<p>TC2:  acdgk</p>
-<p>销售额：300万；请假天数：7天；现金到账：50%；</p>
-<p>TC3:  aceijk</p>
-<p>销售额：100万；请假天数：7天；现金到账：95%；</p>
-<p>TC4:  acehjk</p>
-<p>销售额：100万；请假天数：7天；现金到账：75%；</p>
-<p>TC5: ab</p>
-<p>销售额：-10万；请假天数：-9天；现金到账：-10%；</p>
+<img src="./判断覆盖.png"/>
 
 <p style="margin-top:50px;">条件覆盖：</p>
 <p>要使得每个判断中的每个条件的可能取值至少满足一次。</p>
-<el-table
-      :data="questionData"
-      style="width: 60%;font-size:12px;"
-      >
-      <el-table-column
-        prop="con"
-        label="条件"
-        width="140"
-        align="center">
-      </el-table-column>
-      <el-table-column
-        prop="t"
-        label="真"
-        width="240"
-        align="center">
-      </el-table-column>
-      <el-table-column
-        prop="f"
-        label="假"
-        align="center">
-      </el-table-column>
-</el-table>
-
-<p>测试用例：</p>
-<p>TC1:  F1 T2 T3 F4 F5 F6 F7</p>
-<p>销售额：100万；请假天数：7天；现金到账：50%；</p>
-<p>TC2: F1 F2 F3 T4 F5 F6 F7</p>
-<p>销售额：100万；请假天数：11天；现金到账：95%；</p>
-<p>TC3:  T1 T2 T3 T4 F5 F6 F7</p>
-<p>销售额：300万；请假天数：7天；现金到账：70%；</p>
-<p>TC4:  T1 T2 T3 F4 F5 F6 F7</p>
-<p>销售额：300万；请假天数：7天；现金到账：50%；</p>
-<p>TC5:  F1 T2 T3 F4 T5 T6 T7</p>
-<p>销售额：-10万；请假天数：-9天；现金到账：-10%；</p>
+<p>可能的条件有</p>
+<img src="./可能的条件.png"/>
+<p>测试用例如下：</p>
+<img src="./条件覆盖.png"/>
 
 <p style="margin-top:50px;">判断条件覆盖：</p>
 <p>判断中每个条件的所有可能至少满足一次，并且每个判断本身的判定结果也至少出现一次。</p>
-<p>S-年销售额；D-请假天数；M-现金到账</p>
-<p>P1： sales＜0 && days＜0 && money＜0 </p>
-<p>P2： sales＞200 && days≤0 </p>
-<p>P3： money≥0.6 </p>
-<p>P4： money≤0.85 </p>
-<el-table
-      :data="questionData2"
-      style="width: 80%;font-size:12px;"
-      >
-      <el-table-column
-        prop="id"
-        label="序号"
-        width="140"
-        align="center">
-      </el-table-column>
-      <el-table-column
-        prop="S"
-        label="Sales-年销售额"
-        width="180"
-        align="center">
-      </el-table-column>
-      <el-table-column
-        prop="D"
-        label="Days-请假天数"
-        width="180"
-        align="center">
-      </el-table-column>
-      <el-table-column
-        prop="M"
-        label="Money-现金到账"
-        width="180"
-        align="center">
-      </el-table-column>
-      <el-table-column
-        prop="P1"
-        label="P1"
-        align="center">
-      </el-table-column>
-      <el-table-column
-        prop="P2"
-        label="P2"
-        align="center">
-      </el-table-column>
-      <el-table-column
-        prop="P3"
-        label="P3"
-        align="center">
-      </el-table-column>
-      <el-table-column
-        prop="P4"
-        label="P4"
-        align="center">
-      </el-table-column>
-</el-table>
-<p>TC1: F1 F2 T3 F4 T5 T6 T7</p>
-<p>销售额：-10万；请假天数：-9天；现金到账：-10%;</p>
-<p>TC2:  T1 T2 T3 F4 F5 F6 F7</p>
-<p>销售额：300万；请假天数：7天；现金到账：50%；</p>
-<p>TC3:  F1 F2 T3 F4 F5 F6 F7</p>
-<p>销售额：100万；请假天数：11天；现金到账：50%;</p>
-<p>TC4:  F1 T2 T3 T4 F5 F6 F7</p>
-<p>销售额：100万；请假天数：7天；现金到账：75%；</p>
-<p>TC5:  T1 T2 T3 T4 F5 F6 F7</p>
-<p>销售额：300万；请假天数：7天；现金到账：60%;</p>
-<p>TC6: F1 T2 F3 F4 F5 F6 F7</p>
-<p>销售额：100万；请假天数：7天；现金到账：95%;</p>
+<img src="./判定条件覆盖.png"/>
+
 
 
 <p style="margin-top:50px;">条件组合覆盖：</p>
 <p>每个判断的所有可能的条件取值组合都至少执行一次。</p>
-<el-table
-      :data="questionData1"
-      style="width: 60%;font-size:12px;"
-      >
-      <el-table-column
-        prop="id"
-        label="序号"
-        width="140"
-        align="center">
-      </el-table-column>
-      <el-table-column
-        prop="zuhe"
-        label="条件组合"
-        width="240"
-        align="center">
-      </el-table-column>
-      <el-table-column
-        prop="luoji"
-        label="逻辑表示"
-        align="center">
-      </el-table-column>
-</el-table>
-<p>测试用例如下：</p>
-<el-table
-      :data="questionData3"
-      style="width: 80%;font-size:12px;"
-      >
-      <el-table-column
-        prop="id"
-        label="序号"
-        width="140"
-        align="center">
-      </el-table-column>
-      <el-table-column
-        prop="S"
-        label="Sales-年销售额"
-        width="180"
-        align="center">
-      </el-table-column>
-      <el-table-column
-        prop="D"
-        label="Days-请假天数"
-        width="180"
-        align="center">
-      </el-table-column>
-      <el-table-column
-        prop="M"
-        label="Money-现金到账"
-        width="180"
-        align="center">
-      </el-table-column>
-      <el-table-column
-        prop="zuhe"
-        label="覆盖组合号"
-        align="center">
-      </el-table-column>
-      <el-table-column
-        prop="tiaojian"
-        label="覆盖条件"
-        align="center">
-      </el-table-column>
-</el-table>
+<img src="./条件组合覆盖1.png"/>
+<img src="./条件组合覆盖2.png"/>
 
     </div>
 
